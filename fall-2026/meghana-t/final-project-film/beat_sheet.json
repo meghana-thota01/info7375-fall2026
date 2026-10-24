@@ -1,0 +1,763 @@
+{
+  "metadata": {
+    "slug": "ai-dashboard-insight-benchmark-pitch",
+    "title": "AI Dashboard Insight Benchmark — Project Pitch",
+    "topic": "FINAL PROJECT PITCH",
+    "skill": "show-tell",
+    "style_preset": "show-tell",
+    "channel": "meghana-thota",
+    "persona": "Meghana Thota",
+    "voice": "af_bella",
+    "voice_kokoro": "af_bella",
+    "engine": "kokoro",
+    "clock": "narration",
+    "palette": "claude",
+    "register": "Plain",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "width": 3840,
+    "height": 2160,
+    "caption_policy": "none",
+    "playlist": "INFO7375 Final Project",
+    "chapter_number": 1,
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt"
+    ],
+    "bookend_exempt_reason": "Show-tell opens with hesitant writer and definitions; no verdict. Your Turn and locked spoken outro retained.",
+    "source_doc": "PROJECT-BRIEF.md; SOURCES.md",
+    "tags": [
+      "AI Evaluation",
+      "Business Analytics",
+      "Prompt Contracts",
+      "Verification"
+    ],
+    "build": {
+      "at": "2026-10-24T18:37:31",
+      "cut": "master",
+      "filled": 13,
+      "of": 13,
+      "slates": [],
+      "skin_warnings": [
+        "BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "BOUT: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "BIDEA",
+      "act": "bookend",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Hi, I'm Meghana. AI dashboard insights come with one instruction: check it yourself. Microsoft's documentation says Copilot outputs are nondeterministic, and that users should know how to evaluate or validate them for themselves. Tableau Pulse also writes insights automatically. I couldn't find a published breakdown of error types for either.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one hesitant-writer correction, cold open."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "AI dashboard insights\nneed no checking.",
+            "triggerWords": "need no checking",
+            "replacementWords": "come with one instruction: check it yourself",
+            "fontSize": 78,
+            "charMs": 22,
+            "hesitateBetween": 6,
+            "hesitateWithin": 1,
+            "mistakeRate": 2,
+            "jitter": 20,
+            "seed": "ai-dashboard-insight-benchmark-pitch",
+            "banner": "“Copilot outputs are nondeterministic” — Microsoft Learn, Oct 22, 2026",
+            "durationSeconds": 22.49
+          },
+          "rendered": {
+            "out": "media/BIDEA.mp4",
+            "at": "2026-10-24T22:20:46.643865+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 22.19,
+      "audio_file": "mp3/beat-BIDEA.mp3",
+      "render_duration_s": 22.208333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BIDEA.mp4",
+        "filled_by": "remotion:BrutalistHesitantWriter",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "BDEFS",
+      "act": "bookend",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Four terms. Planted ground truth: synthetic data where I already know the right answer. A prompt contract: a fixed format every model's response must follow. Cited figures: the exact numbers a model points to as its evidence. And a small base: a percentage computed from very few rows.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: definitions bookend."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ClaudeDefinitions",
+          "props": {
+            "title": "Terms In This Film",
+            "terms": [
+              {
+                "term": "planted ground truth",
+                "meaning": "Data where I already know the right answer"
+              },
+              {
+                "term": "prompt contract",
+                "meaning": "A fixed format every response must follow"
+              },
+              {
+                "term": "cited figures",
+                "meaning": "The exact numbers a model points to as evidence"
+              },
+              {
+                "term": "small base",
+                "meaning": "A percentage computed from very few rows"
+              }
+            ],
+            "folderLabel": "INFO7375",
+            "durationSeconds": 20.01
+          },
+          "rendered": {
+            "out": "media/BDEFS.mp4",
+            "at": "2026-10-24T22:21:59.176154+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 19.71,
+      "audio_file": "mp3/beat-BDEFS.mp3",
+      "render_duration_s": 19.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BDEFS.mp4",
+        "filled_by": "remotion:ClaudeDefinitions",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B00",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "Here's what I'll build: a benchmark, delivered as a GitHub repository and a findings report. I'll send the same small table — region, revenue, percent change — to Claude Sonnet 5.5 and GPT-5.6 Terra, and score each insight they write against the planted answer.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one table prop, two readable labels."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "The Pipeline",
+            "sub": "Example — synthetic",
+            "items": [
+              {
+                "label": "1  Input table",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "2  Claude Sonnet 5.5 · GPT-5.6 Terra",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "3  JSON output",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "4  5 checks",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "5  Findings table",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "focus": 1,
+            "durationSeconds": 18.97
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-10-24T22:23:02.769844+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 18.67,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 18.708333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B00B",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "A hiring manager opening the repo will see this findings table first, and can click any row to see the input table, the model's raw output, and every check. Right now every cell says pending. This is the plan, not a result — nothing has run yet.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: a planned table, explicitly labeled not-yet-run."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Findings Table — Planned, no results yet",
+            "sub": "Planned — no results yet",
+            "items": [
+              {
+                "label": "Contract violation",
+                "value": "pending",
+                "sub": ""
+              },
+              {
+                "label": "Wrong driver",
+                "value": "pending",
+                "sub": ""
+              },
+              {
+                "label": "Wrong number",
+                "value": "pending",
+                "sub": ""
+              },
+              {
+                "label": "Misleading small base",
+                "value": "pending",
+                "sub": ""
+              },
+              {
+                "label": "Correct",
+                "value": "pending",
+                "sub": ""
+              }
+            ],
+            "focus": 0,
+            "durationSeconds": 16.07
+          },
+          "rendered": {
+            "out": "media/B00B.mp4",
+            "at": "2026-10-24T22:23:59.730192+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 15.77,
+      "audio_file": "mp3/beat-B00B.mp3",
+      "render_duration_s": 15.791666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00B.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "Each model will answer inside a fixed contract: which driver caused the change, what percentage, and which exact figures back it up. A response that breaks the format is scored as a contract violation.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell card: structure, not data."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Prompt Contract",
+            "sub": "Example format — not a real output",
+            "items": [
+              {
+                "label": "claimed_driver",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "claimed_percentage",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "cited_figures",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "focus": 0,
+            "durationSeconds": 13.38
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-10-24T22:24:47.556509+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 13.08,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 13.083333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "Three checks will be scripted: is the format valid, do the cited figures exist in the table, and is the number within one percentage point of the true value. Two are judgment calls I'll make by hand: did the text name the right driver, and did it flag a small base.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell card: structure, not data."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "tabs",
+            "heading": "Scripted vs. Judgment",
+            "sub": "3 automated checks  |  2 hand-labeled calls",
+            "durationSeconds": 16.81,
+            "labels": [
+              "Automated",
+              "Judgment"
+            ],
+            "items": [
+              {
+                "label": "Schema valid",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Cited figures match",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Number within 1 pt of true value",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "items2": [
+              {
+                "label": "Driver named correctly",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Small-base caveat present",
+                "value": "",
+                "sub": ""
+              }
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-10-24T22:25:43.279076+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.51,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 16.541666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "I won't assume my own labels are consistent. I'll relabel every judgment call after seven days, with model names hidden, and report Cohen's kappa and plain percent agreement. That's evaluation and verification — the course skills this project will show.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell card: structure, not data."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Reliability Plan",
+            "sub": "relabel after 7 days → kappa + percent agreement",
+            "durationSeconds": 16.6,
+            "items": [
+              {
+                "label": "Re-label gap",
+                "value": "7 days",
+                "sub": ""
+              },
+              {
+                "label": "Reliability target",
+                "value": "Cohen's κ ≥ 0.70",
+                "sub": ""
+              },
+              {
+                "label": "Cross-check",
+                "value": "% agreement",
+                "sub": ""
+              },
+              {
+                "label": "Caveat check size",
+                "value": "12 items",
+                "sub": ""
+              },
+              {
+                "label": "Caveat κ",
+                "value": "rough signal",
+                "sub": ""
+              }
+            ],
+            "focus": 1
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-10-24T22:26:40.012295+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 16.3,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 16.333333333333332,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "There will be 18 distinct tables, not one table repeated — and six will have a small base that's easy to miss, so neither model can coast.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one countable prop set."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "18 Distinct Tables",
+            "sub": "6 with a planted small-base effect",
+            "items": [
+              {
+                "label": "Tables",
+                "value": "18",
+                "sub": ""
+              },
+              {
+                "label": "Small-base tables",
+                "value": "6",
+                "sub": ""
+              },
+              {
+                "label": "Generations",
+                "value": "36",
+                "sub": ""
+              },
+              {
+                "label": "Runs per table per model",
+                "value": "1",
+                "sub": ""
+              }
+            ],
+            "focus": 0,
+            "durationSeconds": 8.94
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-10-24T22:27:13.082748+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 8.64,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 8.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B04B",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "The real risk is sample size: 18 tables is small, so each one moves a result by about five and a half points. So I'm deciding now, before any results: a difference only counts if it shows up in at least 4 of the 18.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: a single pre-committed rule."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "masked",
+            "word": "4 of 18",
+            "sub": "called a real difference only if this many tables differ. Set before any results.",
+            "durationSeconds": 14.83
+          },
+          "rendered": {
+            "out": "media/B04B.mp4",
+            "at": "2026-10-24T22:28:06.366534+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 14.53,
+      "audio_file": "mp3/beat-B04B.mp3",
+      "render_duration_s": 14.541666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04B.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "I won't test Tableau Pulse or Copilot themselves — that's deliberately out of scope. What this will produce is a checklist for BI analysts: which numbers in an AI-written insight to double-check, with counts from my test. The first thing I'll make run: one table through both models and the three scripted checks. A logged row is how you'll know it ran.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: scope boundary, one prop."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "CHECKLIST",
+            "sub": "Not testing Copilot or Tableau Pulse themselves",
+            "items": [
+              {
+                "label": "Contract violation",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Wrong driver",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Wrong number",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Misleading small base",
+                "value": "",
+                "sub": ""
+              },
+              {
+                "label": "Correct",
+                "value": "",
+                "sub": ""
+              }
+            ],
+            "focus": 0,
+            "durationSeconds": 21.93
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-10-24T22:29:19.119449+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 21.63,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 21.666666666666668,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "remotion:ShowTellCard",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I'm applying for Data and Business Analyst roles. I reread my resume and noticed every AI line said I'd used AI. None said I'd checked it. My hypothesis-driven analysis and business reporting already show in my churn, CLV, and airline-satisfaction projects. What's new for me is separating what a script can check from what needs judgment, and testing my own consistency.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one reflective prop."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A document prop turns a page, one line highlighted, then a check mark is added beside it",
+        "motion_claim": "Closing a real, noticed gap",
+        "manim": {
+          "class": "B06_ResumeGap"
+        },
+        "prop_id": "quick-reference"
+      },
+      "actual_duration_s": 24.19,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 24.208333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "bookend",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Your turn. Paste this into Claude and build a small benchmark for an AI task you actually do. Then check: does every category have a clear definition, and did you set your meaningful difference before seeing results?",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: your-turn bookend."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "YOUR TURN",
+            "segment": "Design an Evaluation Benchmark",
+            "command": "Help me design a small evaluation benchmark for an AI task I actually do, with planted ground truth, a fixed output contract, and a reliability check on my own labeling.",
+            "runningText": "paste this into Claude…",
+            "output": [
+              "Check: every category has a clear, checkable definition.",
+              "Check: 'meaningful difference' was defined before seeing results."
+            ],
+            "folderLabel": "INFO7375",
+            "modelLabel": "Claude",
+            "effortLabel": "High",
+            "largeText": true,
+            "durationSeconds": 13.93
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": "2026-10-24T22:30:11.011686+00:00"
+          }
+        }
+      },
+      "actual_duration_s": 13.63,
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "render_duration_s": 13.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-10-24T18:37:31"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "bookend",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "AI Dashboard Insight Benchmark. By Meghana Thota.",
+      "voice": "af_bella",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: title outro."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Title and the speaker's own name fade in, centered",
+        "manim": {
+          "class": "BOUT_TitleCard"
+        }
+      },
+      "kind": "outro_voice",
+      "tail_silence_s": 1.0,
+      "actual_duration_s": 3.46,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "render_duration_s": 3.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/BOUT.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T18:37:31"
+      }
+    }
+  ]
+}
