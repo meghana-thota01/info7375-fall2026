@@ -14,7 +14,7 @@
 ## What I made
 
 - `beat_sheet.json` — the narration and visual plan for all 13 beats, written and revised across several rounds based on real review feedback (see FRICTIONAL.md).
-- `scenes.py`'s two custom Manim scenes — `B06_ResumeGap` and `BOUT_TitleCard` — designed by me (the resume-reflection concept and the no-branding outro requirement were both mine), with the Manim code itself written with Claude.
+- `scenes.py`'s two custom Manim scenes — `B06_ResumeGap` and `BOUT_TitleCard` — designed by me (the resume-reflection concept and the no-branding outro requirement were both mine), with the Manim code itself written with Claude. The rest of `scenes.py` is the Brutalist toolkit's `iso_kit.py` helper code, included unmodified so the scenes run standalone.
 - `PROJECT-BRIEF.md`, `README.md`, `BUILD-PROMPT.md`, `SOURCES.md` (this file), and `FRICTIONAL.md`.
 - A one-line, well-scoped edit to `runtime/remotion/src/scenes/ClaudeDefinitions.tsx`, increasing two hardcoded font-size constants (`termSize`, `meanSize`) after confirming no prop exists to control this size and that smaller text was failing the toolkit's own Gate T minimum-size check at four terms. Documented in FRICTIONAL.md.
 
