@@ -49,6 +49,14 @@ Separately, the Gate T failure (a 40px text run against a 41px floor) that had r
 
 A final review caught one more honesty-rule slip that survived the larger rewrite: B00 said "against the answer I planted," past tense for a table that doesn't exist yet. Changed to "against the planted answer," regenerated B00's audio only, re-synced its duration, and re-rendered.
 
+## Nov 22, 2026 — Model superseded, switched before building anything
+
+While checking resource access for the next project film (per the professor's new "do you have what you need" requirement), found that GPT-5.6 Terra — the model named in the original pitch — had been superseded by GPT-6.1 Terra, released Oct 26, 2026. Verified this directly: OpenAI's own announcement (multiple locale versions) and independent press coverage (BleepingComputer, The Register) confirm GPT-6.1 Terra replaces GPT-5.6 Terra in OpenAI's lineup, with better benchmark scores on software engineering and visual reasoning, and roughly 50% lower pricing. Also directly confirmed GPT-5.6 Terra (plain, non-Pro tier) is absent from at least one major model-aggregator's current listings, while GPT-6.1 Terra is present and self-serve accessible.
+
+Switched the benchmark second model from GPT-5.6 Terra to GPT-6.1 Terra rather than build a comparison against an already-outdated model. This is a deliberate change, not a correction of an error — GPT-5.6 Terra was accurately the current model when the original pitch was written. Per the assignment own allowance ("you may change your project later and log the change here"), logging it accordingly.
+
+Also set up real accounts to check actual resource readiness rather than assume it: an Anthropic Console account (Claude Sonnet 5.5 confirmed available) and an AI/ML API account with an issued key (GPT-6.1 Terra confirmed available). Deliberately did not fund either account yet, to avoid spending money before actually ready to run the benchmark.
+
 ## What changed from the original plan
 
 - No scope change to the core project (benchmark design, taxonomy, methodology all as originally briefed).
