@@ -1,0 +1,871 @@
+[
+  {
+    "table_id": "sales_01",
+    "domain": "sales_performance",
+    "variant": "growth",
+    "small_base": true,
+    "n_rows": 6,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "North",
+        "revenue_prior_month": 947,
+        "revenue_this_month": 3788
+      },
+      {
+        "region": "Mountain",
+        "revenue_prior_month": 192964,
+        "revenue_this_month": 193005
+      },
+      {
+        "region": "East",
+        "revenue_prior_month": 72790,
+        "revenue_this_month": 71411
+      },
+      {
+        "region": "South",
+        "revenue_prior_month": 160604,
+        "revenue_this_month": 158669
+      },
+      {
+        "region": "Pacific",
+        "revenue_prior_month": 58331,
+        "revenue_this_month": 58680
+      },
+      {
+        "region": "Central",
+        "revenue_prior_month": 57811,
+        "revenue_this_month": 57914
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "North",
+      "true_driver_dimension": "region",
+      "true_percentage_change": 0.0,
+      "total_prior": 543447,
+      "total_current": 543467,
+      "driver_base_count": 947,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "sales_02",
+    "domain": "sales_performance",
+    "variant": "growth",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "West",
+        "revenue_prior_month": 91853,
+        "revenue_this_month": 92821
+      },
+      {
+        "region": "Central",
+        "revenue_prior_month": 160785,
+        "revenue_this_month": 219406
+      },
+      {
+        "region": "East",
+        "revenue_prior_month": 139194,
+        "revenue_this_month": 136979
+      },
+      {
+        "region": "North",
+        "revenue_prior_month": 122842,
+        "revenue_this_month": 122252
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Central",
+      "true_driver_dimension": "region",
+      "true_percentage_change": 11.0,
+      "total_prior": 514674,
+      "total_current": 571458,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "sales_03",
+    "domain": "sales_performance",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 5,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "Mountain",
+        "revenue_prior_month": 170435,
+        "revenue_this_month": 173893
+      },
+      {
+        "region": "East",
+        "revenue_prior_month": 190568,
+        "revenue_this_month": 198350
+      },
+      {
+        "region": "Central",
+        "revenue_prior_month": 82722,
+        "revenue_this_month": 82633
+      },
+      {
+        "region": "Pacific",
+        "revenue_prior_month": 149230,
+        "revenue_this_month": 147048
+      },
+      {
+        "region": "North",
+        "revenue_prior_month": 70656,
+        "revenue_this_month": 33441
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "North",
+      "true_driver_dimension": "region",
+      "true_percentage_change": -4.3,
+      "total_prior": 663611,
+      "total_current": 635365,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "sales_04",
+    "domain": "sales_performance",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "North",
+        "revenue_prior_month": 70916,
+        "revenue_this_month": 73520
+      },
+      {
+        "region": "Pacific",
+        "revenue_prior_month": 111024,
+        "revenue_this_month": 109137
+      },
+      {
+        "region": "South",
+        "revenue_prior_month": 76476,
+        "revenue_this_month": 39259
+      },
+      {
+        "region": "East",
+        "revenue_prior_month": 149647,
+        "revenue_this_month": 149410
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "South",
+      "true_driver_dimension": "region",
+      "true_percentage_change": -9.0,
+      "total_prior": 408063,
+      "total_current": 371326,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "sales_05",
+    "domain": "sales_performance",
+    "variant": "decoy",
+    "small_base": true,
+    "n_rows": 6,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "East",
+        "revenue_prior_month": 92834,
+        "revenue_this_month": 89639
+      },
+      {
+        "region": "Pacific",
+        "revenue_prior_month": 171178,
+        "revenue_this_month": 178398
+      },
+      {
+        "region": "North",
+        "revenue_prior_month": 149471,
+        "revenue_this_month": 255195
+      },
+      {
+        "region": "South",
+        "revenue_prior_month": 120765,
+        "revenue_this_month": 125656
+      },
+      {
+        "region": "Mountain",
+        "revenue_prior_month": 196001,
+        "revenue_this_month": 196023
+      },
+      {
+        "region": "Central",
+        "revenue_prior_month": 243619,
+        "revenue_this_month": 243619
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "North",
+      "true_driver_dimension": "region",
+      "true_percentage_change": 11.8,
+      "total_prior": 973868,
+      "total_current": 1088530,
+      "driver_base_count": 149471,
+      "has_decoy": true
+    }
+  },
+  {
+    "table_id": "sales_06",
+    "domain": "sales_performance",
+    "variant": "decoy",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "region",
+      "revenue_prior_month",
+      "revenue_this_month"
+    ],
+    "rows": [
+      {
+        "region": "South",
+        "revenue_prior_month": 180870,
+        "revenue_this_month": 307116
+      },
+      {
+        "region": "Central",
+        "revenue_prior_month": 153712,
+        "revenue_this_month": 155848
+      },
+      {
+        "region": "East",
+        "revenue_prior_month": 208951,
+        "revenue_this_month": 208951
+      },
+      {
+        "region": "Mountain",
+        "revenue_prior_month": 87452,
+        "revenue_this_month": 90486
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "South",
+      "true_driver_dimension": "region",
+      "true_percentage_change": 20.8,
+      "total_prior": 630985,
+      "total_current": 762401,
+      "driver_base_count": null,
+      "has_decoy": true
+    }
+  },
+  {
+    "table_id": "support_01",
+    "domain": "support_tickets",
+    "variant": "growth",
+    "small_base": true,
+    "n_rows": 5,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Account Access",
+        "tickets_prior_week": 340,
+        "tickets_this_week": 343
+      },
+      {
+        "category": "Bugs",
+        "tickets_prior_week": 8,
+        "tickets_this_week": 32
+      },
+      {
+        "category": "Feature Requests",
+        "tickets_prior_week": 126,
+        "tickets_this_week": 125
+      },
+      {
+        "category": "Login Issues",
+        "tickets_prior_week": 104,
+        "tickets_this_week": 102
+      },
+      {
+        "category": "Billing",
+        "tickets_prior_week": 136,
+        "tickets_this_week": 135
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Bugs",
+      "true_driver_dimension": "category",
+      "true_percentage_change": 3.2,
+      "total_prior": 714,
+      "total_current": 737,
+      "driver_base_count": 8,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "support_02",
+    "domain": "support_tickets",
+    "variant": "growth",
+    "small_base": false,
+    "n_rows": 5,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Account Access",
+        "tickets_prior_week": 138,
+        "tickets_this_week": 137
+      },
+      {
+        "category": "Feature Requests",
+        "tickets_prior_week": 354,
+        "tickets_this_week": 360
+      },
+      {
+        "category": "Onboarding",
+        "tickets_prior_week": 216,
+        "tickets_this_week": 308
+      },
+      {
+        "category": "Billing",
+        "tickets_prior_week": 254,
+        "tickets_this_week": 257
+      },
+      {
+        "category": "Refunds",
+        "tickets_prior_week": 137,
+        "tickets_this_week": 135
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Onboarding",
+      "true_driver_dimension": "category",
+      "true_percentage_change": 8.9,
+      "total_prior": 1099,
+      "total_current": 1197,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "support_03",
+    "domain": "support_tickets",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 6,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Onboarding",
+        "tickets_prior_week": 339,
+        "tickets_this_week": 353
+      },
+      {
+        "category": "Login Issues",
+        "tickets_prior_week": 391,
+        "tickets_this_week": 408
+      },
+      {
+        "category": "Account Access",
+        "tickets_prior_week": 181,
+        "tickets_this_week": 184
+      },
+      {
+        "category": "Billing",
+        "tickets_prior_week": 158,
+        "tickets_this_week": 159
+      },
+      {
+        "category": "Feature Requests",
+        "tickets_prior_week": 271,
+        "tickets_this_week": 172
+      },
+      {
+        "category": "Refunds",
+        "tickets_prior_week": 162,
+        "tickets_this_week": 158
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Feature Requests",
+      "true_driver_dimension": "category",
+      "true_percentage_change": -4.5,
+      "total_prior": 1502,
+      "total_current": 1434,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "support_04",
+    "domain": "support_tickets",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 5,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Onboarding",
+        "tickets_prior_week": 370,
+        "tickets_this_week": 362
+      },
+      {
+        "category": "Feature Requests",
+        "tickets_prior_week": 120,
+        "tickets_this_week": 120
+      },
+      {
+        "category": "Login Issues",
+        "tickets_prior_week": 123,
+        "tickets_this_week": 124
+      },
+      {
+        "category": "Billing",
+        "tickets_prior_week": 328,
+        "tickets_this_week": 325
+      },
+      {
+        "category": "Bugs",
+        "tickets_prior_week": 115,
+        "tickets_this_week": 68
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Bugs",
+      "true_driver_dimension": "category",
+      "true_percentage_change": -5.4,
+      "total_prior": 1056,
+      "total_current": 999,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "support_05",
+    "domain": "support_tickets",
+    "variant": "decoy",
+    "small_base": true,
+    "n_rows": 6,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Bugs",
+        "tickets_prior_week": 284,
+        "tickets_this_week": 289
+      },
+      {
+        "category": "Login Issues",
+        "tickets_prior_week": 398,
+        "tickets_this_week": 398
+      },
+      {
+        "category": "Account Access",
+        "tickets_prior_week": 304,
+        "tickets_this_week": 466
+      },
+      {
+        "category": "Refunds",
+        "tickets_prior_week": 344,
+        "tickets_this_week": 338
+      },
+      {
+        "category": "Feature Requests",
+        "tickets_prior_week": 311,
+        "tickets_this_week": 305
+      },
+      {
+        "category": "Onboarding",
+        "tickets_prior_week": 141,
+        "tickets_this_week": 136
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Account Access",
+      "true_driver_dimension": "category",
+      "true_percentage_change": 8.4,
+      "total_prior": 1782,
+      "total_current": 1932,
+      "driver_base_count": 304,
+      "has_decoy": true
+    }
+  },
+  {
+    "table_id": "support_06",
+    "domain": "support_tickets",
+    "variant": "decoy",
+    "small_base": false,
+    "n_rows": 6,
+    "columns": [
+      "category",
+      "tickets_prior_week",
+      "tickets_this_week"
+    ],
+    "rows": [
+      {
+        "category": "Billing",
+        "tickets_prior_week": 343,
+        "tickets_this_week": 356
+      },
+      {
+        "category": "Login Issues",
+        "tickets_prior_week": 442,
+        "tickets_this_week": 442
+      },
+      {
+        "category": "Onboarding",
+        "tickets_prior_week": 222,
+        "tickets_this_week": 231
+      },
+      {
+        "category": "Account Access",
+        "tickets_prior_week": 328,
+        "tickets_this_week": 321
+      },
+      {
+        "category": "Refunds",
+        "tickets_prior_week": 189,
+        "tickets_this_week": 183
+      },
+      {
+        "category": "Bugs",
+        "tickets_prior_week": 356,
+        "tickets_this_week": 565
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Bugs",
+      "true_driver_dimension": "category",
+      "true_percentage_change": 11.6,
+      "total_prior": 1880,
+      "total_current": 2098,
+      "driver_base_count": null,
+      "has_decoy": true
+    }
+  },
+  {
+    "table_id": "marketing_01",
+    "domain": "marketing_campaigns",
+    "variant": "growth",
+    "small_base": true,
+    "n_rows": 5,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Social",
+        "conversions_prior_week": 4,
+        "conversions_this_week": 16
+      },
+      {
+        "channel": "Organic",
+        "conversions_prior_week": 130,
+        "conversions_this_week": 128
+      },
+      {
+        "channel": "Affiliate",
+        "conversions_prior_week": 111,
+        "conversions_this_week": 110
+      },
+      {
+        "channel": "Referral",
+        "conversions_prior_week": 286,
+        "conversions_this_week": 285
+      },
+      {
+        "channel": "Display Ads",
+        "conversions_prior_week": 253,
+        "conversions_this_week": 250
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Social",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": 0.6,
+      "total_prior": 784,
+      "total_current": 789,
+      "driver_base_count": 4,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "marketing_02",
+    "domain": "marketing_campaigns",
+    "variant": "growth",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Display Ads",
+        "conversions_prior_week": 105,
+        "conversions_this_week": 104
+      },
+      {
+        "channel": "Email",
+        "conversions_prior_week": 356,
+        "conversions_this_week": 480
+      },
+      {
+        "channel": "Organic",
+        "conversions_prior_week": 87,
+        "conversions_this_week": 86
+      },
+      {
+        "channel": "Affiliate",
+        "conversions_prior_week": 127,
+        "conversions_this_week": 126
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Email",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": 17.9,
+      "total_prior": 675,
+      "total_current": 796,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "marketing_03",
+    "domain": "marketing_campaigns",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Paid Search",
+        "conversions_prior_week": 215,
+        "conversions_this_week": 213
+      },
+      {
+        "channel": "Organic",
+        "conversions_prior_week": 312,
+        "conversions_this_week": 326
+      },
+      {
+        "channel": "Email",
+        "conversions_prior_week": 226,
+        "conversions_this_week": 229
+      },
+      {
+        "channel": "Affiliate",
+        "conversions_prior_week": 296,
+        "conversions_this_week": 129
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Affiliate",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": -14.5,
+      "total_prior": 1049,
+      "total_current": 897,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "marketing_04",
+    "domain": "marketing_campaigns",
+    "variant": "decline",
+    "small_base": false,
+    "n_rows": 6,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Email",
+        "conversions_prior_week": 337,
+        "conversions_this_week": 328
+      },
+      {
+        "channel": "Affiliate",
+        "conversions_prior_week": 351,
+        "conversions_this_week": 146
+      },
+      {
+        "channel": "Social",
+        "conversions_prior_week": 160,
+        "conversions_this_week": 166
+      },
+      {
+        "channel": "Display Ads",
+        "conversions_prior_week": 109,
+        "conversions_this_week": 109
+      },
+      {
+        "channel": "Organic",
+        "conversions_prior_week": 340,
+        "conversions_this_week": 355
+      },
+      {
+        "channel": "Paid Search",
+        "conversions_prior_week": 121,
+        "conversions_this_week": 122
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Affiliate",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": -13.5,
+      "total_prior": 1418,
+      "total_current": 1226,
+      "driver_base_count": null,
+      "has_decoy": false
+    }
+  },
+  {
+    "table_id": "marketing_05",
+    "domain": "marketing_campaigns",
+    "variant": "decoy",
+    "small_base": true,
+    "n_rows": 6,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Referral",
+        "conversions_prior_week": 213,
+        "conversions_this_week": 220
+      },
+      {
+        "channel": "Email",
+        "conversions_prior_week": 361,
+        "conversions_this_week": 361
+      },
+      {
+        "channel": "Display Ads",
+        "conversions_prior_week": 240,
+        "conversions_this_week": 232
+      },
+      {
+        "channel": "Affiliate",
+        "conversions_prior_week": 202,
+        "conversions_this_week": 308
+      },
+      {
+        "channel": "Paid Search",
+        "conversions_prior_week": 215,
+        "conversions_this_week": 216
+      },
+      {
+        "channel": "Social",
+        "conversions_prior_week": 282,
+        "conversions_this_week": 298
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Affiliate",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": 8.1,
+      "total_prior": 1513,
+      "total_current": 1635,
+      "driver_base_count": 202,
+      "has_decoy": true
+    }
+  },
+  {
+    "table_id": "marketing_06",
+    "domain": "marketing_campaigns",
+    "variant": "decoy",
+    "small_base": false,
+    "n_rows": 4,
+    "columns": [
+      "channel",
+      "conversions_prior_week",
+      "conversions_this_week"
+    ],
+    "rows": [
+      {
+        "channel": "Email",
+        "conversions_prior_week": 147,
+        "conversions_this_week": 149
+      },
+      {
+        "channel": "Referral",
+        "conversions_prior_week": 258,
+        "conversions_this_week": 406
+      },
+      {
+        "channel": "Paid Search",
+        "conversions_prior_week": 318,
+        "conversions_this_week": 318
+      },
+      {
+        "channel": "Social",
+        "conversions_prior_week": 205,
+        "conversions_this_week": 203
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Referral",
+      "true_driver_dimension": "channel",
+      "true_percentage_change": 15.9,
+      "total_prior": 928,
+      "total_current": 1076,
+      "driver_base_count": null,
+      "has_decoy": true
+    }
+  }
+]

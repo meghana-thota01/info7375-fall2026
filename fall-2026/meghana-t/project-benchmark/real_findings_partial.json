@@ -1,0 +1,104 @@
+[
+  {
+    "model_name": "gemini-flash-latest",
+    "table_id": "region_01",
+    "final_label": "Correct",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": true,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": null
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "all cited figures verified in table",
+      "tolerance": "within tolerance (claimed=-4.26, true=-4.3, diff=0.04)"
+    }
+  },
+  {
+    "model_name": "gemini-flash-latest",
+    "table_id": "category_01",
+    "final_label": "Correct",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": true,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": null
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "all cited figures verified in table",
+      "tolerance": "within tolerance (claimed=-4.26, true=-4.3, diff=0.04)"
+    }
+  },
+  {
+    "model_name": "gemini-flash-latest",
+    "table_id": "region_02",
+    "final_label": "Misleading small base",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": true,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": false
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "all cited figures verified in table",
+      "tolerance": "within tolerance (claimed=20.0, true=20.0, diff=0.00)"
+    }
+  },
+  {
+    "model_name": "claude-sonnet-5-5",
+    "table_id": "region_01",
+    "final_label": "Contract violation",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": false,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": null
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "cited figures not found in table: [494040.2, 472993.03, 32485.86, 21631.59]",
+      "tolerance": "within tolerance (claimed=-4.26, true=-4.3, diff=0.04)"
+    }
+  },
+  {
+    "model_name": "claude-sonnet-5-5",
+    "table_id": "category_01",
+    "final_label": "Contract violation",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": false,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": null
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "cited figures not found in table: [494040.21, 472993.04, 16343.75, 14908.91, 10205.49]",
+      "tolerance": "within tolerance (claimed=-4.26, true=-4.3, diff=0.04)"
+    }
+  },
+  {
+    "model_name": "claude-sonnet-5-5",
+    "table_id": "region_02",
+    "final_label": "Contract violation",
+    "checks": {
+      "schema_valid": true,
+      "citations_exist": false,
+      "percentage_in_tolerance": true,
+      "correct_driver": true,
+      "small_base_caveat_present": null
+    },
+    "messages": {
+      "schema": "valid",
+      "citations": "cited figures not found in table: [51684.29, 62020.96, 11177.25, 3560.53]",
+      "tolerance": "within tolerance (claimed=20.0, true=20.0, diff=0.00)"
+    }
+  }
+]

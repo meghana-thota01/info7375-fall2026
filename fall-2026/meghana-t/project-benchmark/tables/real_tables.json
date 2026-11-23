@@ -1,0 +1,1172 @@
+[
+  {
+    "table_id": "region_01",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": false,
+    "columns": [
+      "Region",
+      "Sales_2023",
+      "Sales_2024"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Sales_2023": 103838.16,
+        "Sales_2024": 102874.22
+      },
+      {
+        "Region": "East",
+        "Sales_2023": 135439.83,
+        "Sales_2024": 157071.42
+      },
+      {
+        "Region": "South",
+        "Sales_2023": 103845.84,
+        "Sales_2024": 71359.98
+      },
+      {
+        "Region": "West",
+        "Sales_2023": 150916.37,
+        "Sales_2024": 141687.41
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "South",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": -4.3,
+      "total_prior": 494040.2,
+      "total_current": 472993.03,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "region_02",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": true,
+    "columns": [
+      "Region",
+      "Profit_2023",
+      "Profit_2024"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Profit_2023": 539.55,
+        "Profit_2024": 11716.8
+      },
+      {
+        "Region": "East",
+        "Profit_2023": 19011.14,
+        "Profit_2024": 21189.05
+      },
+      {
+        "Region": "South",
+        "Profit_2023": 11879.12,
+        "Profit_2024": 8318.59
+      },
+      {
+        "Region": "West",
+        "Profit_2023": 20254.48,
+        "Profit_2024": 20796.52
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Central",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": 20.0,
+      "total_prior": 51684.29,
+      "total_current": 62020.96,
+      "driver_base_value": 539.55
+    }
+  },
+  {
+    "table_id": "region_03",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Region",
+      "Sales_2024",
+      "Sales_2025"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Sales_2024": 102874.22,
+        "Sales_2025": 148604.69
+      },
+      {
+        "Region": "East",
+        "Sales_2024": 157071.42,
+        "Sales_2025": 182749.87
+      },
+      {
+        "Region": "South",
+        "Sales_2024": 71359.98,
+        "Sales_2025": 93610.22
+      },
+      {
+        "Region": "West",
+        "Sales_2024": 141687.41,
+        "Sales_2025": 188968.79
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "West",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": 29.8,
+      "total_prior": 472993.03,
+      "total_current": 613933.57,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "region_04",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Region",
+      "Profit_2024",
+      "Profit_2025"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Profit_2024": 11716.8,
+        "Profit_2025": 20036.76
+      },
+      {
+        "Region": "East",
+        "Profit_2024": 21189.05,
+        "Profit_2025": 20602.63
+      },
+      {
+        "Region": "South",
+        "Profit_2024": 8318.59,
+        "Profit_2025": 17702.81
+      },
+      {
+        "Region": "West",
+        "Profit_2024": 20796.52,
+        "Profit_2025": 24323.0
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "South",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": 33.3,
+      "total_prior": 62020.96,
+      "total_current": 82665.2,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "region_05",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Region",
+      "Sales_2025",
+      "Sales_2026"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Sales_2025": 148604.69,
+        "Sales_2026": 147853.6
+      },
+      {
+        "Region": "East",
+        "Sales_2025": 182749.87,
+        "Sales_2026": 216567.04
+      },
+      {
+        "Region": "South",
+        "Sales_2025": 93610.22,
+        "Sales_2026": 122905.86
+      },
+      {
+        "Region": "West",
+        "Sales_2025": 188968.79,
+        "Sales_2026": 258241.03
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "West",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": 21.4,
+      "total_prior": 613933.57,
+      "total_current": 745567.53,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "region_06",
+    "domain": "sales_by_region",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Region",
+      "Profit_2025",
+      "Profit_2026"
+    ],
+    "rows": [
+      {
+        "Region": "Central",
+        "Profit_2025": 20036.76,
+        "Profit_2026": 7572.19
+      },
+      {
+        "Region": "East",
+        "Profit_2025": 20602.63,
+        "Profit_2026": 34080.43
+      },
+      {
+        "Region": "South",
+        "Profit_2025": 17702.81,
+        "Profit_2026": 8848.91
+      },
+      {
+        "Region": "West",
+        "Profit_2025": 24323.0,
+        "Profit_2026": 45424.81
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "West",
+      "true_driver_dimension": "Region",
+      "true_percentage_change": 16.0,
+      "total_prior": 82665.2,
+      "total_current": 95926.34,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_01",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Sales_2023",
+      "Sales_2024"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Sales_2023": 162124.81,
+        "Sales_2024": 172330.3
+      },
+      {
+        "Category": "Office Supplies",
+        "Sales_2023": 154013.97,
+        "Sales_2024": 137670.22
+      },
+      {
+        "Category": "Technology",
+        "Sales_2023": 177901.43,
+        "Sales_2024": 162992.52
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Office Supplies",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": -4.3,
+      "total_prior": 494040.21,
+      "total_current": 472993.04,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_02",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Profit_2023",
+      "Profit_2024"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Profit_2023": 5884.57,
+        "Profit_2024": 3279.97
+      },
+      {
+        "Category": "Office Supplies",
+        "Profit_2023": 23489.33,
+        "Profit_2024": 25177.88
+      },
+      {
+        "Category": "Technology",
+        "Profit_2023": 22310.4,
+        "Profit_2024": 33563.13
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Technology",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": 20.0,
+      "total_prior": 51684.3,
+      "total_current": 62020.98,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_03",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Sales_2024",
+      "Sales_2025"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Sales_2024": 172330.3,
+        "Sales_2025": 200979.73
+      },
+      {
+        "Category": "Office Supplies",
+        "Sales_2024": 137670.22,
+        "Sales_2025": 186373.69
+      },
+      {
+        "Category": "Technology",
+        "Sales_2024": 162992.52,
+        "Sales_2025": 226580.16
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Technology",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": 29.8,
+      "total_prior": 472993.04,
+      "total_current": 613933.58,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_04",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Profit_2024",
+      "Profit_2025"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Profit_2024": 3279.97,
+        "Profit_2025": 7216.22
+      },
+      {
+        "Category": "Office Supplies",
+        "Profit_2024": 25177.88,
+        "Profit_2025": 35613.22
+      },
+      {
+        "Category": "Technology",
+        "Profit_2024": 33563.13,
+        "Profit_2025": 39835.76
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Office Supplies",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": 33.3,
+      "total_prior": 62020.98,
+      "total_current": 82665.2,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_05",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Sales_2025",
+      "Sales_2026"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Sales_2025": 200979.73,
+        "Sales_2026": 219312.93
+      },
+      {
+        "Category": "Office Supplies",
+        "Sales_2025": 186373.69,
+        "Sales_2026": 253835.44
+      },
+      {
+        "Category": "Technology",
+        "Sales_2025": 226580.16,
+        "Sales_2026": 272419.17
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Office Supplies",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": 21.4,
+      "total_prior": 613933.58,
+      "total_current": 745567.54,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "category_06",
+    "domain": "sales_by_category",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Category",
+      "Profit_2025",
+      "Profit_2026"
+    ],
+    "rows": [
+      {
+        "Category": "Furniture",
+        "Profit_2025": 7216.22,
+        "Profit_2026": 3349.24
+      },
+      {
+        "Category": "Office Supplies",
+        "Profit_2025": 35613.22,
+        "Profit_2026": 41743.02
+      },
+      {
+        "Category": "Technology",
+        "Profit_2025": 39835.76,
+        "Profit_2026": 50834.08
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Technology",
+      "true_driver_dimension": "Category",
+      "true_percentage_change": 16.0,
+      "total_prior": 82665.2,
+      "total_current": 95926.34,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_01",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Sales_2023",
+      "Sales_2024"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Sales_2023": 25014.27,
+        "Sales_2024": 40523.96
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Sales_2023": 15689.22,
+        "Sales_2024": 23248.57
+      },
+      {
+        "Sub-Category": "Art",
+        "Sales_2023": 6154.53,
+        "Sales_2024": 6362.03
+      },
+      {
+        "Sub-Category": "Binders",
+        "Sales_2023": 44460.27,
+        "Sales_2024": 37663.21
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Sales_2023": 20036.68,
+        "Sales_2024": 38543.57
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Sales_2023": 79982.48,
+        "Sales_2024": 72673.96
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Sales_2023": 12049.76,
+        "Sales_2024": 26179.45
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Sales_2023": 3855.75,
+        "Sales_2024": 4548.63
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Sales_2023": 801.17,
+        "Sales_2024": 567.42
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Sales_2023": 15090.11,
+        "Sales_2024": 21942.74
+      },
+      {
+        "Sub-Category": "Labels",
+        "Sales_2023": 2841.39,
+        "Sales_2024": 2956.46
+      },
+      {
+        "Sub-Category": "Machines",
+        "Sales_2023": 62366.57,
+        "Sales_2024": 27763.7
+      },
+      {
+        "Sub-Category": "Paper",
+        "Sales_2023": 15321.72,
+        "Sales_2024": 15316.49
+      },
+      {
+        "Sub-Category": "Phones",
+        "Sales_2023": 78470.83,
+        "Sales_2024": 68525.41
+      },
+      {
+        "Sub-Category": "Storage",
+        "Sales_2023": 50470.14,
+        "Sales_2024": 45054.93
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Sales_2023": 14419.78,
+        "Sales_2024": 1952.48
+      },
+      {
+        "Sub-Category": "Tables",
+        "Sales_2023": 47015.55,
+        "Sales_2024": 39170.02
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Machines",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": -4.3,
+      "total_prior": 494040.22,
+      "total_current": 472993.03,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_02",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2023,
+      2024
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Profit_2023",
+      "Profit_2024"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Profit_2023": 6402.72,
+        "Profit_2024": 10197.28
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Profit_2023": 2565.5,
+        "Profit_2024": 2514.63
+      },
+      {
+        "Sub-Category": "Art",
+        "Profit_2023": 1433.62,
+        "Profit_2024": 1485.6
+      },
+      {
+        "Sub-Category": "Binders",
+        "Profit_2023": 5203.25,
+        "Profit_2024": 7633.37
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Profit_2023": -346.17,
+        "Profit_2024": -2755.23
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Profit_2023": 7145.23,
+        "Profit_2024": 6341.82
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Profit_2023": 3380.93,
+        "Profit_2024": 9930.3
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Profit_2023": 1495.48,
+        "Profit_2024": 1976.59
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Profit_2023": 233.27,
+        "Profit_2024": 182.37
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Profit_2023": 2295.9,
+        "Profit_2024": 3193.58
+      },
+      {
+        "Sub-Category": "Labels",
+        "Profit_2023": 1286.0,
+        "Profit_2024": 1323.03
+      },
+      {
+        "Sub-Category": "Machines",
+        "Profit_2023": 407.78,
+        "Profit_2024": 2977.49
+      },
+      {
+        "Sub-Category": "Paper",
+        "Profit_2023": 6588.52,
+        "Profit_2024": 6579.71
+      },
+      {
+        "Sub-Category": "Phones",
+        "Profit_2023": 12118.98,
+        "Profit_2024": 10458.07
+      },
+      {
+        "Sub-Category": "Storage",
+        "Profit_2023": 4186.95,
+        "Profit_2024": 3507.46
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Profit_2023": 496.74,
+        "Profit_2024": -24.88
+      },
+      {
+        "Sub-Category": "Tables",
+        "Profit_2023": -3210.39,
+        "Profit_2024": -3500.2
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Copiers",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": 20.0,
+      "total_prior": 51684.31,
+      "total_current": 62020.99,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_03",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Sales_2024",
+      "Sales_2025"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Sales_2024": 40523.96,
+        "Sales_2025": 41895.85
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Sales_2024": 23248.57,
+        "Sales_2025": 26164.24
+      },
+      {
+        "Sub-Category": "Art",
+        "Sales_2024": 6362.03,
+        "Sales_2025": 6119.77
+      },
+      {
+        "Sub-Category": "Binders",
+        "Sales_2024": 37663.21,
+        "Sales_2025": 51580.13
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Sales_2024": 38543.57,
+        "Sales_2025": 26426.88
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Sales_2024": 72673.96,
+        "Sales_2025": 85079.43
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Sales_2024": 26179.45,
+        "Sales_2025": 49599.41
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Sales_2024": 4548.63,
+        "Sales_2025": 4745.41
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Sales_2024": 567.42,
+        "Sales_2025": 1001.93
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Sales_2024": 21942.74,
+        "Sales_2025": 28638.0
+      },
+      {
+        "Sub-Category": "Labels",
+        "Sales_2024": 2956.46,
+        "Sales_2025": 2910.16
+      },
+      {
+        "Sub-Category": "Machines",
+        "Sales_2024": 27763.7,
+        "Sales_2025": 55906.89
+      },
+      {
+        "Sub-Category": "Paper",
+        "Sales_2024": 15316.49,
+        "Sales_2025": 20728.8
+      },
+      {
+        "Sub-Category": "Phones",
+        "Sales_2024": 68525.41,
+        "Sales_2025": 79178.01
+      },
+      {
+        "Sub-Category": "Storage",
+        "Sales_2024": 45054.93,
+        "Sales_2025": 58845.68
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Sales_2024": 1952.48,
+        "Sales_2025": 14277.58
+      },
+      {
+        "Sub-Category": "Tables",
+        "Sales_2024": 39170.02,
+        "Sales_2025": 60835.41
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Machines",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": 29.8,
+      "total_prior": 472993.03,
+      "total_current": 613933.58,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_04",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2024,
+      2025
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Profit_2024",
+      "Profit_2025"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Profit_2024": 10197.28,
+        "Profit_2025": 9664.29
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Profit_2024": 2514.63,
+        "Profit_2025": 5334.38
+      },
+      {
+        "Sub-Category": "Art",
+        "Profit_2024": 1485.6,
+        "Profit_2025": 1463.16
+      },
+      {
+        "Sub-Category": "Binders",
+        "Profit_2024": 7633.37,
+        "Profit_2025": 10648.59
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Profit_2024": -2755.23,
+        "Profit_2025": 127.52
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Profit_2024": 6341.82,
+        "Profit_2025": 5948.38
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Profit_2024": 9930.3,
+        "Profit_2025": 17742.79
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Profit_2024": 1976.59,
+        "Profit_2025": 2074.2
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Profit_2024": 182.37,
+        "Profit_2025": 314.11
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Profit_2024": 3193.58,
+        "Profit_2025": 4090.66
+      },
+      {
+        "Sub-Category": "Labels",
+        "Profit_2024": 1323.03,
+        "Profit_2025": 1161.23
+      },
+      {
+        "Sub-Category": "Machines",
+        "Profit_2024": 2977.49,
+        "Profit_2025": 2907.32
+      },
+      {
+        "Sub-Category": "Paper",
+        "Profit_2024": 6579.71,
+        "Profit_2025": 9089.24
+      },
+      {
+        "Sub-Category": "Phones",
+        "Profit_2024": 10458.07,
+        "Profit_2025": 9521.36
+      },
+      {
+        "Sub-Category": "Storage",
+        "Profit_2024": 3507.46,
+        "Profit_2025": 6227.28
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Profit_2024": -24.88,
+        "Profit_2025": -698.96
+      },
+      {
+        "Sub-Category": "Tables",
+        "Profit_2024": -3500.2,
+        "Profit_2025": -2950.34
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Copiers",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": 33.3,
+      "total_prior": 62020.99,
+      "total_current": 82665.21,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_05",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Sales_2025",
+      "Sales_2026"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Sales_2025": 41895.85,
+        "Sales_2026": 59946.23
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Sales_2025": 26164.24,
+        "Sales_2026": 43111.16
+      },
+      {
+        "Sub-Category": "Art",
+        "Sales_2025": 6119.77,
+        "Sales_2026": 9022.7
+      },
+      {
+        "Sub-Category": "Binders",
+        "Sales_2025": 51580.13,
+        "Sales_2026": 73651.27
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Sales_2025": 26426.88,
+        "Sales_2026": 30354.07
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Sales_2025": 85079.43,
+        "Sales_2026": 98032.38
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Sales_2025": 49599.41,
+        "Sales_2026": 62916.67
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Sales_2025": 4745.41,
+        "Sales_2026": 3378.57
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Sales_2025": 1001.93,
+        "Sales_2026": 6161.71
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Sales_2025": 28638.0,
+        "Sales_2026": 29927.28
+      },
+      {
+        "Sub-Category": "Labels",
+        "Sales_2025": 2910.16,
+        "Sales_2026": 3987.03
+      },
+      {
+        "Sub-Category": "Machines",
+        "Sales_2025": 55906.89,
+        "Sales_2026": 43887.88
+      },
+      {
+        "Sub-Category": "Paper",
+        "Sales_2025": 20728.8,
+        "Sales_2026": 28173.53
+      },
+      {
+        "Sub-Category": "Phones",
+        "Sales_2025": 79178.01,
+        "Sales_2026": 105668.39
+      },
+      {
+        "Sub-Category": "Storage",
+        "Sales_2025": 58845.68,
+        "Sales_2026": 70273.81
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Sales_2025": 14277.58,
+        "Sales_2026": 16075.66
+      },
+      {
+        "Sub-Category": "Tables",
+        "Sales_2025": 60835.41,
+        "Sales_2026": 60999.2
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Phones",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": 21.4,
+      "total_prior": 613933.58,
+      "total_current": 745567.54,
+      "driver_base_value": null
+    }
+  },
+  {
+    "table_id": "subcategory_06",
+    "domain": "sales_by_subcategory",
+    "source": "real Superstore dataset (Tableau public sample data)",
+    "years_compared": [
+      2025,
+      2026
+    ],
+    "small_base": false,
+    "columns": [
+      "Sub-Category",
+      "Profit_2025",
+      "Profit_2026"
+    ],
+    "rows": [
+      {
+        "Sub-Category": "Accessories",
+        "Profit_2025": 9664.29,
+        "Profit_2026": 15672.36
+      },
+      {
+        "Sub-Category": "Appliances",
+        "Profit_2025": 5334.38,
+        "Profit_2026": 7914.98
+      },
+      {
+        "Sub-Category": "Art",
+        "Profit_2025": 1463.16,
+        "Profit_2026": 2270.82
+      },
+      {
+        "Sub-Category": "Binders",
+        "Profit_2025": 10648.59,
+        "Profit_2026": 7940.89
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "Profit_2025": 127.52,
+        "Profit_2026": -658.19
+      },
+      {
+        "Sub-Category": "Chairs",
+        "Profit_2025": 5948.38,
+        "Profit_2026": 7788.1
+      },
+      {
+        "Sub-Category": "Copiers",
+        "Profit_2025": 17742.79,
+        "Profit_2026": 25039.91
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "Profit_2025": 2074.2,
+        "Profit_2026": 1441.76
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "Profit_2025": 314.11,
+        "Profit_2026": 1698.88
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "Profit_2025": 4090.66,
+        "Profit_2026": 4311.6
+      },
+      {
+        "Sub-Category": "Labels",
+        "Profit_2025": 1161.23,
+        "Profit_2026": 1802.52
+      },
+      {
+        "Sub-Category": "Machines",
+        "Profit_2025": 2907.32,
+        "Profit_2026": -2830.61
+      },
+      {
+        "Sub-Category": "Paper",
+        "Profit_2025": 9089.24,
+        "Profit_2026": 12254.04
+      },
+      {
+        "Sub-Category": "Phones",
+        "Profit_2025": 9521.36,
+        "Profit_2026": 12952.42
+      },
+      {
+        "Sub-Category": "Storage",
+        "Profit_2025": 6227.28,
+        "Profit_2026": 7363.42
+      },
+      {
+        "Sub-Category": "Supplies",
+        "Profit_2025": -698.96,
+        "Profit_2026": -944.29
+      },
+      {
+        "Sub-Category": "Tables",
+        "Profit_2025": -2950.34,
+        "Profit_2026": -8092.27
+      }
+    ],
+    "ground_truth": {
+      "true_driver": "Copiers",
+      "true_driver_dimension": "Sub-Category",
+      "true_percentage_change": 16.0,
+      "total_prior": 82665.21,
+      "total_current": 95926.34,
+      "driver_base_value": null
+    }
+  }
+]

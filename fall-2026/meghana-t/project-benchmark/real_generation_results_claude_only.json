@@ -1,0 +1,12 @@
+[
+  {
+    "table_id": "sales_01",
+    "model_name": "claude-sonnet-5-5",
+    "error": "400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages"
+  },
+  {
+    "table_id": "sales_02",
+    "model_name": "claude-sonnet-5-5",
+    "error": "400 Client Error: Bad Request for url: https://api.anthropic.com/v1/messages"
+  }
+]
